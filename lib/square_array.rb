@@ -1,6 +1,7 @@
-def square_array(numbers)
-    numbers.each do |num|
-    new_numbers << (num ** 2)
-  
-  return new_numbers
-end
+def square_array(array)
+
+  while index > -1
+    array[index] = array[index] * array[index]
+    index = index - 1
+  end
+  array
